@@ -1,0 +1,5 @@
+<view>
+  <input type="text" placeholder="请输入城市名" bindinput="getCity" />
+  <button bindtap="searchWt" type="primary"
+  style="background-color:#055674;margin:10px">查询</button>
+</view>

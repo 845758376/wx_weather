@@ -1,0 +1,33 @@
+<template name="wt_main">
+	<block wx:if="{{status == 'ok'}}">
+
+		<!-- 外部容器，可以纵向滚动 -->
+		<scroll-view class="outer" style="background-image: url({{bgurl}});">
+
+			<!-- 基本信息的view，包含城市、时间、更新日期等 -->
+			<view class="base_info inner">
+				<text class="city">{{city}}</text>
+				<text class="date">{{now}}</text>
+				<text class="update">{{upTime}} 更新</text>
+			</view>
+
+			<!-- 天气状况的view，主要包含当前文档，及天气状况 -->
+			<view class="wt_info inner">
+
+				<!-- 气温 -->
+				<text class="temp">{{temp}}℃</text>
+
+				<!-- 天气状况 -->
+				<text class="desc">{{desc}}</text>
+			</view>
+			<view class="wt_index inner">
+				<text class="title">空气质量 : {{suggestion.air.brf}}</text>
+				<text>{{suggestion.air.txt}}</text>
+			</view>
+
+		</scroll-view>
+	</block>
+	<block wx:else>
+		错误的城市信息
+	</block>
+</template>

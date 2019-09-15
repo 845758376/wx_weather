@@ -1,0 +1,48 @@
+page {
+  font: 13px "微软雅黑";
+  line-height: 1.5;
+  color: white;
+  height:100%;
+}
+
+/*外部滚动容器的样式*/
+.outer{
+  background-color:rgb(0, 122, 223);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.outer .inner{
+  margin: 10px;
+}
+
+/*基本信息的样式*/
+.base_info{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+/*当前信息*/
+.wt_info{
+  font-size: 40px;
+}
+
+/*天气描述信息*/
+.wt_info .desc{
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+/*气象指数*/
+.wt_index{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wt_index text{
+  margin-bottom: 10px;
+}
